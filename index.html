@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -223,8 +222,9 @@
 
 <!-- ============ BLOCO 1 · HERO ============ -->
 <section class="hero" data-hero aria-label="Coleção Expedições Avancini">
-  <!-- FOTO DE FUNDO: descomente e aponte para a imagem real -->
-  <div class="hero-bg"><!-- <img src="./images/HERO.jpg" alt="Henrique Avancini em expedição"> --></div>
+  <div class="hero-bg">
+    <img src="./images/masc-azul-02.jpg" alt="Jersey masculina azul da coleção Expedições Avancini" fetchpriority="high">
+  </div>
   <svg class="contour" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
     <defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#C39A4E" stop-opacity="0"/><stop offset="1" stop-color="#C39A4E" stop-opacity="0.22"/>
@@ -256,11 +256,8 @@
   <div class="eyebrow" style="margin-bottom:52px">01 / Avancini × Nomad</div>
   <div class="story-grid">
     <div class="story-shot" data-reveal>
-      <!-- FOTO: trocar por ./images/AVANCINI.jpg -->
-      <div class="ph" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;color:var(--muted-2);background:linear-gradient(160deg,#241E17,#171309)">
-        FOTO — HENRIQUE AVANCINI EM ROTA<br>SUBSTITUIR (proporção 4:5)
-      </div>
-      <div class="story-cap">SERRA DO RIO DO RASTRO · SC — EPISÓDIO 11</div>
+      <img src="./images/fem-rosa-02.jpg" alt="Jersey feminina rosa da coleção Expedições Avancini" loading="lazy">
+      <div class="story-cap">EXPEDIÇÕES AVANCINI · EDIÇÃO LIMITADA 2026</div>
     </div>
     <div data-reveal>
       <p class="pull">Uma série sobre rotas. Uma marca sobre terreno. O encontro era inevitável.</p>
@@ -276,7 +273,7 @@
       </p>
       <p class="body">Não é merchandising de série documental. É a peça que o terreno pediu.</p>
       <div class="sig">
-        <span><b>SÉRIE</b> · 5 rotas mapeadas</span>
+        <span><b>SÉRIE</b> · 2 rotas representadas</span>
         <span><b>COLEÇÃO</b> · <span data-sig-pecas>—</span> jerseys</span>
         <span><b>EDIÇÃO</b> · numerada, limitada</span>
       </div>
@@ -386,7 +383,7 @@
       <div class="eyebrow">03 / Galeria</div>
       <h2 class="display" data-reveal>NO<br>TERRENO</h2>
     </div>
-    <p class="lead">A coleção onde ela foi feita para estar. Substitua cada quadro pelas fotos do lookbook.</p>
+    <p class="lead">Conheça os dois colorways, as modelagens masculina e feminina e os detalhes de construção de cada peça.</p>
   </div>
   <div class="mosaic" data-mosaic data-reveal></div>
 </section>
@@ -451,12 +448,22 @@ var COLECAO = [
     generos:{
       masc:{
         sku:'EXP-RASTRO-M', price:649.00, was:0, left:63,
-        imgs:['','','',''],
+        imgs:[
+          './images/masc-azul-01.jpg',
+          './images/masc-azul-02.jpg',
+          './images/masc-azul-03.jpg',
+          './images/masc-azul-04.jpg'
+        ],
         sizes:{ P:{url:'',stock:true}, M:{url:'',stock:true}, G:{url:'',stock:true}, GG:{url:'',stock:true}, XG:{url:'',stock:false} }
       },
       fem:{
         sku:'EXP-RASTRO-F', price:649.00, was:0, left:48,
-        imgs:['','','',''],
+        imgs:[
+          './images/fem-azul-01.jpg',
+          './images/fem-azul-02.jpg',
+          './images/fem-azul-03.jpg',
+          './images/fem-azul-04.jpg'
+        ],
         sizes:{ P:{url:'',stock:true}, M:{url:'',stock:true}, G:{url:'',stock:true}, GG:{url:'',stock:true}, XG:{url:'',stock:true} }
       }
     }
@@ -473,12 +480,22 @@ var COLECAO = [
     generos:{
       masc:{
         sku:'EXP-ITATIAIA-M', price:649.00, was:0, left:41,
-        imgs:['','','',''],
+        imgs:[
+          './images/masc-rosa-01.jpg',
+          './images/masc-rosa-02.jpg',
+          './images/masc-rosa-03.jpg',
+          './images/masc-rosa-04.jpg'
+        ],
         sizes:{ P:{url:'',stock:true}, M:{url:'',stock:true}, G:{url:'',stock:true}, GG:{url:'',stock:true}, XG:{url:'',stock:true} }
       },
       fem:{
         sku:'EXP-ITATIAIA-F', price:649.00, was:0, left:37,
-        imgs:['','','',''],
+        imgs:[
+          './images/fem-rosa-01.jpg',
+          './images/fem-rosa-02.jpg',
+          './images/fem-rosa-03.jpg',
+          './images/fem-rosa-04.jpg'
+        ],
         sizes:{ P:{url:'',stock:true}, M:{url:'',stock:true}, G:{url:'',stock:true}, GG:{url:'',stock:false}, XG:{url:'',stock:true} }
       }
     }
@@ -506,13 +523,13 @@ var GENEROS = { masc:'Masculino', fem:'Feminino' };
    2) GALERIA — bloco 4
 --------------------------------------------------------------------- */
 var GALERIA = [
-  { cls:'c-a', src:'', cap:'SERRA DO RIO DO RASTRO · SC' },
-  { cls:'c-b', src:'', cap:'DETALHE DE TECIDO · CORTE RACING' },
-  { cls:'c-c', src:'', cap:'BOLSOS TRASEIROS' },
-  { cls:'c-d', src:'', cap:'GOLA E ZÍPER' },
-  { cls:'c-e', src:'', cap:'PUNHO E MANGA' },
-  { cls:'c-f', src:'', cap:'MODELAGEM FEMININA' },
-  { cls:'c-g', src:'', cap:'ITATIAIA · AGULHAS NEGRAS' }
+  { cls:'c-a', src:'./images/masc-azul-01.jpg', cap:'RIO DO RASTRO · MASCULINA' },
+  { cls:'c-b', src:'./images/fem-rosa-01.jpg', cap:'AGULHAS NEGRAS · FEMININA' },
+  { cls:'c-c', src:'./images/masc-azul-03.jpg', cap:'RIO DO RASTRO · DETALHE FRONTAL' },
+  { cls:'c-d', src:'./images/masc-rosa-03.jpg', cap:'AGULHAS NEGRAS · DETALHE FRONTAL' },
+  { cls:'c-e', src:'./images/fem-azul-04.jpg', cap:'RIO DO RASTRO · COSTAS' },
+  { cls:'c-f', src:'./images/fem-rosa-04.jpg', cap:'AGULHAS NEGRAS · MODELAGEM FEMININA' },
+  { cls:'c-g', src:'./images/masc-rosa-04.jpg', cap:'AGULHAS NEGRAS · COSTAS' }
 ];
 
 /* ---------------------------------------------------------------------
