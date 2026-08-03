@@ -5,24 +5,75 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jerseys Expedições Avancini | Nomad Sports</title>
 
-<meta name="description" content="Coleção Jerseys Expedições Avancini da Nomad. Cada jersey nasce de uma rota da série documental de Henrique Avancini. Peças numeradas, edição limitada 2026.">
+<meta name="description" content="Coleção Expedições Avancini da Nomad. Duas jerseys, duas subidas reais da série documental de Henrique Avancini — Macacos (MG) e Sumidouro (RJ). Peças numeradas, edição limitada 2026.">
 <meta property="og:type" content="product">
 <meta property="og:title" content="Jerseys Expedições Avancini | Nomad Sports">
-<meta property="og:description" content="Uma jersey por rota. Série documental Henrique Avancini × Nomad. Peças numeradas, edição limitada 2026.">
+<meta property="og:description" content="Uma jersey por subida. Série documental Henrique Avancini × Nomad. Macacos e Sumidouro, peças numeradas, edição limitada 2026.">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Nomad Sports">
 <meta property="og:price:currency" content="BRL">
+<meta property="og:price:amount" content="499.00">
 <meta name="theme-color" content="#14110D">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PF8JW35');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Analytics 4 (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MY5QFH8E9Z"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-MY5QFH8E9Z');
+</script>
+<!-- End GA4 -->
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '353704995112251');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=353704995112251&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=IBM+Plex+Mono:wght@400;500&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lenis/1.1.14/lenis.min.js"></script>
 
 <style>
+  /* =====================================================================
+     FONTES CUSTOM DO REPOSITÓRIO
+  ===================================================================== */
+  @font-face{
+    font-family:'Causten Round';
+    src:url('./fonts/CaustenRound-ExtraBold.ttf') format('truetype');
+    font-weight:700;font-style:normal;font-display:swap;
+  }
+  @font-face{
+    font-family:'Vienna Woodtype';
+    src:url('./fonts/ViennaWoodtype-Clean.ttf') format('truetype');
+    font-weight:400 900;font-style:normal;font-display:swap;
+  }
+
   :root{
     --ink:#14110D; --ink-2:#1B1712; --ink-3:#221D16;
     --paper:#ECE7DD; --bone:#E7E2D6;
@@ -32,6 +83,9 @@
     --line-2:rgba(231,226,214,0.24);
     --muted:rgba(231,226,214,0.55);
     --muted-2:rgba(231,226,214,0.40);
+    --f-causten:'Causten Round','Archivo',sans-serif;
+    --f-mont:'Montserrat','Archivo',sans-serif;
+    --f-vienna:'Vienna Woodtype','Fraunces',serif;
   }
   *{box-sizing:border-box}
   html,body{margin:0;padding:0;background:var(--ink)}
@@ -110,6 +164,9 @@
   .tab[aria-selected="true"]{background:var(--brass)}
   .tab[aria-selected="true"] .tn,.tab[aria-selected="true"] .ts{color:var(--ink)}
 
+  .prod-head{max-width:880px;margin:0 0 clamp(30px,4.4vw,50px)}
+  .prod-head .pstory{margin-bottom:0}
+
   .prod{display:grid;grid-template-columns:minmax(0,1fr) minmax(320px,0.86fr);gap:clamp(28px,4vw,56px);align-items:start}
   .shot{position:relative;border:1px solid var(--line);background:var(--ink-3);aspect-ratio:4/5;overflow:hidden}
   .shot img{width:100%;height:100%;object-fit:cover}
@@ -129,7 +186,7 @@
   .pep{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.2em;color:var(--brass);display:block;margin-bottom:18px}
   .pname{margin:0 0 16px;font-family:'Fraunces',serif;font-weight:900;text-transform:uppercase;line-height:0.9;
     font-size:clamp(34px,4.4vw,64px)}
-  .pstory{font-size:15px;line-height:1.75;color:var(--muted);margin:0 0 26px}
+  .pstory{font-size:15px;line-height:1.75;color:var(--muted);margin:0 0 26px;max-width:640px}
   .pstory b{color:var(--bone);font-weight:700}
 
   .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-bottom:28px}
@@ -149,10 +206,14 @@
 
   .sellbl{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:26px 0 10px;flex-wrap:wrap}
   .sellbl span{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.18em;color:var(--muted-2)}
-  .toggle{display:flex;border:1px solid var(--line-2);border-radius:2px;overflow:hidden;width:min(320px,100%)}
+  .toggle{display:flex;border:1px solid var(--line-2);border-radius:2px;overflow:hidden;width:min(360px,100%)}
   .toggle button{flex:1;background:transparent;border:none;padding:13px 0;font-family:'IBM Plex Mono',monospace;
-    font-size:11.5px;letter-spacing:0.14em;color:var(--muted);transition:.2s}
+    font-size:11.5px;letter-spacing:0.14em;color:var(--muted);transition:.2s;display:flex;align-items:center;justify-content:center;gap:0}
   .toggle button[aria-pressed="true"]{background:var(--brass);color:var(--ink)}
+  .toggle button[aria-pressed="true"] .sw{box-shadow:0 0 0 1.5px rgba(20,17,13,.35)}
+  .sw{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:9px;flex:0 0 auto}
+  .sw-azul{background:#3E5C8C}
+  .sw-rosa{background:#C77A93}
   .sizes{display:flex;gap:8px;flex-wrap:wrap}
   .size{min-width:56px;padding:14px;border:1px solid var(--line-2);background:transparent;border-radius:2px;
     font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.06em;color:var(--bone);transition:.2s}
@@ -185,8 +246,6 @@
   .c-a{grid-column:span 7;aspect-ratio:16/10}
   .c-b{grid-column:span 5;aspect-ratio:4/5}
   .c-c,.c-d,.c-e{grid-column:span 4;aspect-ratio:1/1}
-  .c-f{grid-column:span 5;aspect-ratio:3/4}
-  .c-g{grid-column:span 7;aspect-ratio:16/11}
   .cap{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:linear-gradient(transparent,rgba(20,17,13,0.85));
     font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;color:var(--muted)}
 
@@ -202,16 +261,34 @@
   .foot-meta{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:100px;padding-top:22px;
     border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.14em;color:var(--muted-2)}
 
+  /* OVERRIDES DE FONTE */
+  .hero h1{font-family:var(--f-vienna);letter-spacing:0}
+  .hero .inner .eyebrow{font-family:var(--f-mont);text-transform:none;letter-spacing:.05em;font-size:13px;font-weight:400}
+  .hero .telem{font-family:var(--f-mont);letter-spacing:.05em;font-weight:400}
+  .hero .telem b{font-weight:700}
+  .pull{font-family:var(--f-causten);font-weight:700}
+  .story p.body{font-family:var(--f-mont);font-weight:400}
+  .pname{font-family:var(--f-causten);font-weight:700}
+  .stats .stat .k{font-family:var(--f-causten);letter-spacing:.1em}
+  .stats .stat .v{font-family:var(--f-causten)}
+  .pricebox .price{font-family:var(--f-causten);font-weight:700}
+  .pricebox .pixline,.pricebox .instline{font-family:var(--f-causten);letter-spacing:.02em}
+
   @media(max-width:900px){
     .prod,.story-grid{grid-template-columns:1fr}
     .hero .foot{display:none}
     .stats{grid-template-columns:repeat(2,1fr)}
-    .c-a,.c-b,.c-c,.c-d,.c-e,.c-f,.c-g{grid-column:span 12}
+    .c-a,.c-b,.c-c,.c-d,.c-e{grid-column:span 12}
   }
   @media(prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;transition-duration:.001ms!important}}
 </style>
 </head>
 <body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PF8JW35"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <div class="grain"></div>
 
@@ -223,7 +300,7 @@
 <!-- ============ BLOCO 1 · HERO ============ -->
 <section class="hero" data-hero aria-label="Coleção Expedições Avancini">
   <div class="hero-bg">
-    <img src="./images/masc-azul-02.jpg" alt="Jersey masculina azul da coleção Expedições Avancini" fetchpriority="high">
+    <img src="./images/hero.jpg" alt="Henrique Avancini na rota — coleção Expedições Avancini da Nomad" fetchpriority="high">
   </div>
   <svg class="contour" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
     <defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
@@ -246,9 +323,9 @@
     </div>
   </div>
 
-  <div class="foot l mono" data-fade>28.39°S — 49.62°W / SERRA DO RIO DO RASTRO</div>
+  <div class="foot l mono" data-fade>19.96°S — 43.95°W / SUBIDA DE MACACOS</div>
   <div class="cue" data-fade><span>ROLE</span><i data-cue></i></div>
-  <div class="foot r mono" data-fade>ALT. MÁX 2.792 M / AGULHAS NEGRAS</div>
+  <div class="foot r mono" data-fade>22.05°S — 42.67°W / SERRA DE SUMIDOURO</div>
 </section>
 
 <!-- ============ BLOCO 2 · AVANCINI × NOMAD ============ -->
@@ -256,20 +333,20 @@
   <div class="eyebrow" style="margin-bottom:52px">01 / Avancini × Nomad</div>
   <div class="story-grid">
     <div class="story-shot" data-reveal>
-      <img src="./images/fem-rosa-02.jpg" alt="Jersey feminina rosa da coleção Expedições Avancini" loading="lazy">
+      <img src="./images/02-perfil.jpg" alt="Perfil da coleção Expedições Avancini" loading="lazy">
       <div class="story-cap">EXPEDIÇÕES AVANCINI · EDIÇÃO LIMITADA 2026</div>
     </div>
     <div data-reveal>
-      <p class="pull">Uma série sobre rotas. Uma marca sobre terreno. O encontro era inevitável.</p>
+      <p class="pull">Duas subidas, dois temperamentos. Uma explode em dezesseis minutos. A outra se resolve no ritmo. Cada jersey nasceu de uma delas.</p>
       <p class="body">
-        Em <em>Expedições com Henrique Avancini</em>, o bicampeão mundial sai do circuito de competição para
-        percorrer os traçados que construíram o ciclismo brasileiro: subidas de serra, altimetria de parque nacional,
-        estradas de peregrinação e chão de gravel.
+        Em <em>Expedições com Henrique Avancini</em>, o bicampeão mundial troca o circuito de Copa do Mundo pelas
+        estradas que formam o ciclismo brasileiro de verdade: o asfalto que racha na rampa, a serra que não perdoa
+        quem largou rápido demais, o esforço medido em minutos e não em pódios.
       </p>
       <p class="body">
-        A Nomad nasceu do mesmo lugar — equipamento feito para o terreno real, testado onde a estrada acaba.
-        Desta convergência sai a coleção Expedições: cada jersey carrega a paleta, a textura e o relevo de uma rota
-        da série, com a construção técnica da linha premium da marca.
+        Duas dessas rotas viraram tecido. A Subida de Macacos, em Minas, e a Serra de Sumidouro, no Rio, deram a
+        paleta, a textura e o relevo de cada peça — com a construção técnica da linha premium da Nomad. O que muda de
+        uma jersey para a outra é a expedição que você veste.
       </p>
       <p class="body">Não é merchandising de série documental. É a peça que o terreno pediu.</p>
       <div class="sig">
@@ -289,11 +366,10 @@
         <div class="eyebrow">02 / Escolha sua expedição</div>
         <h2 class="display" style="margin-top:14px" data-reveal>UMA JERSEY<br>POR ROTA</h2>
       </div>
-      <p class="lead">Mesma construção técnica em todas. O que muda é a rota que a peça carrega — e quantas ainda existem dela.</p>
+      <p class="lead">Mesma construção técnica nas duas. O que muda é a subida que a peça carrega — e quantas ainda restam dela.</p>
     </div>
   </div>
 
-  <!-- CRISTA ALTIMÉTRICA NAVEGÁVEL — elemento assinatura -->
   <div class="bleed">
     <svg class="ridge" viewBox="0 0 1200 150" preserveAspectRatio="none" role="group" aria-label="Perfil das rotas" data-ridge>
       <defs><linearGradient id="rg" x1="0" y1="0" x2="0" y2="1">
@@ -310,11 +386,17 @@
   </div>
 
   <div class="wrap" style="padding-top:56px">
+    <div class="prod-head">
+      <span class="pep mono" data-ep></span>
+      <h3 class="pname" data-name></h3>
+      <p class="pstory" data-story></p>
+    </div>
+
     <div class="prod">
       <!-- FOTO -->
       <div>
         <div class="shot" data-shot>
-          <div class="num mono" data-num>PEÇA 001–100 · NUMERADA</div>
+          <div class="num mono" data-num>PEÇA NUMERADA · EDIÇÃO LIMITADA 2026</div>
           <img data-shot-img alt="" style="display:none">
           <div class="ph" data-shot-ph>
             <svg width="48%" viewBox="0 0 200 240" fill="none" aria-hidden="true">
@@ -331,15 +413,11 @@
 
       <!-- FICHA COMERCIAL -->
       <div>
-        <span class="pep mono" data-ep></span>
-        <h3 class="pname" data-name></h3>
-        <p class="pstory" data-story></p>
-
         <div class="stats">
-          <div class="stat"><span class="k">RESTAM</span><span class="v"><span data-left>—</span><small data-total>/100</small></span></div>
-          <div class="stat"><span class="k">EXTENSÃO</span><span class="v"><span data-dist>—</span><small>KM</small></span></div>
-          <div class="stat"><span class="k">ALTIMETRIA</span><span class="v"><span data-gain>—</span><small>M</small></span></div>
-          <div class="stat"><span class="k">ALT. MÁX</span><span class="v"><span data-max>—</span><small>M</small></span></div>
+          <div class="stat"><span class="k">DISTÂNCIA</span><span class="v"><span data-dist>—</span><small>KM</small></span></div>
+          <div class="stat"><span class="k">ELEVAÇÃO</span><span class="v"><span data-gain>—</span><small>M</small></span></div>
+          <div class="stat"><span class="k">INCLINAÇÃO</span><span class="v"><span data-grade>—</span><small>%</small></span></div>
+          <div class="stat"><span class="k">TEMPO</span><span class="v" data-time>—</span></div>
         </div>
 
         <div class="pricebox">
@@ -350,6 +428,9 @@
           <div class="pixline" data-pix></div>
           <div class="instline" data-inst></div>
         </div>
+
+        <div class="sellbl"><span>MODELO</span></div>
+        <div class="toggle toggle-model" role="group" aria-label="Modelo" data-models></div>
 
         <div class="sellbl"><span>GÊNERO</span></div>
         <div class="toggle" role="group" aria-label="Gênero">
@@ -367,9 +448,9 @@
         </div>
 
         <div class="assur">
-          <div><i>—</i>Frete grátis para todo o Brasil · envio em até 24 h úteis</div>
-          <div><i>—</i>Troca de tamanho grátis, ida e volta, em 30 dias</div>
-          <div><i>—</i>Peça numerada: produção encerrada após a série</div>
+          <div><i>—</i>Frete grátis nas compras acima de R$ 600 · todo o Brasil</div>
+          <div><i>—</i>Troca de tamanho facilitada em 30 dias (consulte a política de trocas)</div>
+          <div><i>—</i>Peça numerada: produção encerrada quando a série sai do ar</div>
         </div>
       </div>
     </div>
@@ -410,143 +491,101 @@
 </section>
 
 <script>
-/* =====================================================================
-   NOMAD — EXPEDIÇÕES AVANCINI
-   1) COLEÇÃO (rota × gênero × tamanho)  2) GALERIA  3) TRACKING  4) APP
-   ===================================================================== */
-
 var DROP = {
   brand: 'Nomad',
   currency: 'BRL',
   category: 'Jerseys e Camisas',
   collection: 'Expedições Avancini',
-  pix_discount: 0.05,     // 5% no Pix
-  installments: 10,       // 10x sem juros
+  pix_discount: 0.05,
+  installments: 10,
   whatsapp: 'https://wa.me/5531972644457?text=Ol%C3%A1%2C%20quero%20a%20Jersey%20Expedi%C3%A7%C3%B5es%20Avancini.'
 };
 
-/* ---------------------------------------------------------------------
-   1) COLEÇÃO
-   Cada ROTA tem 2 gêneros. Cada gênero tem seus tamanhos, e CADA TAMANHO
-   tem seu próprio link de checkout ("url"), porque o checkout não permite
-   trocar tamanho depois. url vazia ('') => botão trava e avisa.
-   stock:false => tamanho riscado e desabilitado.
-   "left" = peças restantes (ideal: vir do estoque real).
-   Para publicar mais rotas, basta adicionar objetos neste array —
-   a crista altimétrica e as abas se ajustam sozinhas.
---------------------------------------------------------------------- */
 var COLECAO = [
   {
-    id:'rastro',
-    nome:'SERRA DO RIO DO RASTRO',
-    tab:'Rio do Rastro', tabSub:'SC · 284 CURVAS',
-    ep:'SC · 284 CURVAS EM 22 KM',
-    coord:'28.39°S — 49.62°W',
-    dist:22, gain:1100, max:1420, total:100,
-    story:'Vinte e dois quilômetros de subida costurados em <b>284 curvas</b> na serra catarinense. É a estrada que todo ciclista brasileiro conhece de foto e poucos conhecem de perna. O colorway traduz a geometria das curvas e o cinza-molhado da rocha.',
-    prof:[210,205,190,178,182,160,150,155,132,120,128,100,88,95,70,60,66,44,36,42,28],
+    id:'macacos', cor:'ROSA',
+    nome:'SUBIDA DE MACACOS',
+    tab:'Macacos', tabSub:'MG · 5,93 KM',
+    ep:'MG · 5,93 KM A 6,5%',
+    coord:'19.96°S — 43.95°W',
+    dist:5.93, gain:396, grade:6.5, time:'16:27', total:100,
+    story:'Quase seis quilômetros de rampa que não dão trégua. Curta, íngreme, sem trecho pra respirar — é a subida que se <b>ganha ou se perde na explosão</b> dos primeiros metros. Dezesseis minutos no talo, do sopé ao topo. O colorway traduz a terra ferrosa e o cinza de minério das montanhas mineiras.',
+    prof:[70,84,96,110,120,132,140,150,158,168,176,182,190,196,204,210,214,218,222,226,230],
     generos:{
-      masc:{
-        sku:'EXP-RASTRO-M', price:649.00, was:0, left:63,
-        imgs:[
-          './images/masc-azul-01.jpg',
-          './images/masc-azul-02.jpg',
-          './images/masc-azul-03.jpg',
-          './images/masc-azul-04.jpg'
-        ],
-        sizes:{ P:{url:'',stock:true}, M:{url:'',stock:true}, G:{url:'',stock:true}, GG:{url:'',stock:true}, XG:{url:'',stock:false} }
+      masc:{ sku:'EXP-MACACOS-M', price:499.00, was:0, left:63,
+        imgs:['./images/masc-rosa-01.jpg','./images/masc-rosa-02.jpg','./images/masc-rosa-03.jpg','./images/masc-rosa-04.jpg'],
+        sizes:{ 
+          P:{url:'https://www.nomadsports.com.br/comprar?skus=3285%2C1%2C0%2C0&a=18414',stock:true}, 
+          M:{url:'https://www.nomadsports.com.br/comprar?skus=3286%2C1%2C0%2C0&a=18414',stock:true}, 
+          G:{url:'https://www.nomadsports.com.br/comprar?skus=3287%2C1%2C0%2C0&a=18414',stock:true}, 
+          GG:{url:'https://www.nomadsports.com.br/comprar?skus=3288%2C1%2C0%2C0&a=18414',stock:true}, 
+          XG:{url:'https://www.nomadsports.com.br/comprar?skus=3289%2C1%2C0%2C0&a=18414',stock:true} 
+        } 
       },
-      fem:{
-        sku:'EXP-RASTRO-F', price:649.00, was:0, left:48,
-        imgs:[
-          './images/fem-azul-01.jpg',
-          './images/fem-azul-02.jpg',
-          './images/fem-azul-03.jpg',
-          './images/fem-azul-04.jpg'
-        ],
-        sizes:{ P:{url:'',stock:true}, M:{url:'',stock:true}, G:{url:'',stock:true}, GG:{url:'',stock:true}, XG:{url:'',stock:true} }
+      fem:{ sku:'EXP-MACACOS-F', price:499.00, was:0, left:48,
+        imgs:['./images/fem-rosa-01.jpg','./images/fem-rosa-02.jpg','./images/fem-rosa-03.jpg','./images/fem-rosa-04.jpg'],
+        sizes:{ 
+          PP:{url:'https://www.nomadsports.com.br/comprar?skus=3295%2C1%2C0%2C0&a=18414',stock:true}, 
+          P:{url:'https://www.nomadsports.com.br/comprar?skus=3296%2C1%2C0%2C0&a=18414',stock:true}, 
+          M:{url:'https://www.nomadsports.com.br/comprar?skus=3297%2C1%2C0%2C0&a=18414',stock:true}, 
+          G:{url:'https://www.nomadsports.com.br/comprar?skus=3298%2C1%2C0%2C0&a=18414',stock:true} 
+        } 
       }
     }
   },
   {
-    id:'itatiaia',
-    nome:'PICO DAS AGULHAS NEGRAS',
-    tab:'Agulhas Negras', tabSub:'RJ/MG · 2.792 M',
-    ep:'RJ/MG · PARQUE NACIONAL DE ITATIAIA',
-    coord:'22.38°S — 44.65°W',
-    dist:28, gain:1600, max:2792, total:100,
-    story:'A maior altimetria da série: <b>2.792 metros</b> no ponto mais alto do Rio de Janeiro. Ar rarefeito, rocha exposta e a vegetação de altitude que dá nome à paleta — verde-escuro, granito e o dourado do nascer do sol na pedra.',
-    prof:[215,208,200,205,185,190,170,150,158,130,118,124,95,80,86,58,48,54,32,22,16],
+    id:'sumidouro', cor:'AZUL',
+    nome:'SERRA DE SUMIDOURO',
+    tab:'Sumidouro', tabSub:'RJ · 11,97 KM',
+    ep:'RJ · 11,97 KM A 6%',
+    coord:'22.05°S — 42.67°W',
+    dist:11.97, gain:725, grade:6, time:'33:14', total:100,
+    story:'Quase doze quilômetros de serra fluminense em inclinação constante. Aqui explosão nenhuma resolve — só <b>cabeça, cadência e paciência</b> para sustentar mais de meia hora de subida. Trinta e três minutos que separan quem tem perna de quem tem plano. O colorway carrega o verde-mata e o granito úmido da serra do Rio.',
+    prof:[60,80,98,112,126,138,150,160,170,178,186,192,198,204,208,212,216,220,224,228,232],
     generos:{
-      masc:{
-        sku:'EXP-ITATIAIA-M', price:649.00, was:0, left:41,
-        imgs:[
-          './images/masc-rosa-01.jpg',
-          './images/masc-rosa-02.jpg',
-          './images/masc-rosa-03.jpg',
-          './images/masc-rosa-04.jpg'
-        ],
-        sizes:{ P:{url:'',stock:true}, M:{url:'',stock:true}, G:{url:'',stock:true}, GG:{url:'',stock:true}, XG:{url:'',stock:true} }
+      masc:{ sku:'EXP-SUMIDOURO-M', price:499.00, was:0, left:41,
+        imgs:['./images/masc-azul-01.jpg','./images/masc-azul-02.jpg','./images/masc-azul-03.jpg','./images/masc-azul-04.jpg'],
+        sizes:{ 
+          P:{url:'https://www.nomadsports.com.br/comprar?skus=3290%2C1%2C0%2C0&a=18414',stock:true}, 
+          M:{url:'https://www.nomadsports.com.br/comprar?skus=3291%2C1%2C0%2C0&a=18414',stock:true}, 
+          G:{url:'https://www.nomadsports.com.br/comprar?skus=3292%2C1%2C0%2C0&a=18414',stock:true}, 
+          GG:{url:'https://www.nomadsports.com.br/comprar?skus=3293%2C1%2C0%2C0&a=18414',stock:true}, 
+          XG:{url:'https://www.nomadsports.com.br/comprar?skus=3294%2C1%2C0%2C0&a=18414',stock:true} 
+        } 
       },
-      fem:{
-        sku:'EXP-ITATIAIA-F', price:649.00, was:0, left:37,
-        imgs:[
-          './images/fem-rosa-01.jpg',
-          './images/fem-rosa-02.jpg',
-          './images/fem-rosa-03.jpg',
-          './images/fem-rosa-04.jpg'
-        ],
-        sizes:{ P:{url:'',stock:true}, M:{url:'',stock:true}, G:{url:'',stock:true}, GG:{url:'',stock:false}, XG:{url:'',stock:true} }
+      fem:{ sku:'EXP-SUMIDOURO-F', price:499.00, was:0, left:37,
+        imgs:['./images/fem-azul-01.jpg','./images/fem-azul-02.jpg','./images/fem-azul-03.jpg','./images/fem-azul-04.jpg'],
+        sizes:{ 
+          PP:{url:'https://www.nomadsports.com.br/comprar?skus=3299%2C1%2C0%2C0&a=18414',stock:true}, 
+          P:{url:'https://www.nomadsports.com.br/comprar?skus=3300%2C1%2C0%2C0&a=18414',stock:true}, 
+          M:{url:'https://www.nomadsports.com.br/comprar?skus=3301%2C1%2C0%2C0&a=18414',stock:true}, 
+          G:{url:'https://www.nomadsports.com.br/comprar?skus=3302%2C1%2C0%2C0&a=18414',stock:true} 
+        } 
       }
     }
   }
-  /* ---- TEMPLATE para as demais rotas (descomente e preencha) ----
-  ,{
-    id:'fe', nome:'CAMINHO DA FÉ', tab:'Caminho da Fé', tabSub:'SP/MG · 45 KM',
-    ep:'SP/MG · 45 KM DE PEREGRINAÇÃO', coord:'22.70°S — 46.55°W',
-    dist:45, gain:1350, max:1300, total:100,
-    story:'A rota mais longa da coleção e a única em que a altimetria não é o adversário — é a <b>repetição</b>.',
-    prof:[180,160,175,140,158,120,138,150,118,132,100,120,140,110,128,96,112,130,104,120,150],
-    generos:{
-      masc:{ sku:'EXP-FE-M', price:649.00, was:0, left:78, imgs:['','','',''],
-        sizes:{P:{url:'',stock:true},M:{url:'',stock:true},G:{url:'',stock:true},GG:{url:'',stock:true},XG:{url:'',stock:true}} },
-      fem:{ sku:'EXP-FE-F', price:649.00, was:0, left:70, imgs:['','','',''],
-        sizes:{P:{url:'',stock:true},M:{url:'',stock:true},G:{url:'',stock:true},GG:{url:'',stock:true},XG:{url:'',stock:true}} }
-    }
-  }
-  ---------------------------------------------------------------- */
 ];
 
 var GENEROS = { masc:'Masculino', fem:'Feminino' };
 
-/* ---------------------------------------------------------------------
-   2) GALERIA — bloco 4
---------------------------------------------------------------------- */
 var GALERIA = [
-  { cls:'c-a', src:'./images/masc-azul-01.jpg', cap:'RIO DO RASTRO · MASCULINA' },
-  { cls:'c-b', src:'./images/fem-rosa-01.jpg', cap:'AGULHAS NEGRAS · FEMININA' },
-  { cls:'c-c', src:'./images/masc-azul-03.jpg', cap:'RIO DO RASTRO · DETALHE FRONTAL' },
-  { cls:'c-d', src:'./images/masc-rosa-03.jpg', cap:'AGULHAS NEGRAS · DETALHE FRONTAL' },
-  { cls:'c-e', src:'./images/fem-azul-04.jpg', cap:'RIO DO RASTRO · COSTAS' },
-  { cls:'c-f', src:'./images/fem-rosa-04.jpg', cap:'AGULHAS NEGRAS · MODELAGEM FEMININA' },
-  { cls:'c-g', src:'./images/masc-rosa-04.jpg', cap:'AGULHAS NEGRAS · COSTAS' }
+  { cls:'c-a', src:'./images/resto-01.jpg',    cap:'NO TERRENO · EXPEDIÇÕES' },
+  { cls:'c-b', src:'./images/expedicoes_02.jpg', cap:'SUBIDA DE MACACOS' },
+  { cls:'c-c', src:'./images/expedicoes_03.jpg', cap:'SERRA DE SUMIDOURO' },
+  { cls:'c-d', src:'./images/expedicoes_04.jpg', cap:'EXPEDIÇÕES · DETALHE' },
+  { cls:'c-e', src:'./images/avancini-rota.jpg', cap:'HENRIQUE AVANCINI · NA ROTA' }
 ];
 
-/* ---------------------------------------------------------------------
-   3) TRACKING — GA4 (dataLayer/GTM) + Meta Pixel
---------------------------------------------------------------------- */
 window.dataLayer = window.dataLayer || [];
 function push(ev,obj){ window.dataLayer.push({ecommerce:null}); window.dataLayer.push(Object.assign({event:ev},obj||{})); }
 function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
 
-/* ---------------------------------------------------------------------
-   4) APP
---------------------------------------------------------------------- */
 (function(){
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion:reduce)').matches;
   function qs(s,c){ return (c||document).querySelector(s); }
   function qsa(s,c){ return [].slice.call((c||document).querySelectorAll(s)); }
   function brl(n){ return n.toFixed(2).replace('.',','); }
+  function numBR(n){ return String(n).replace('.',','); }
   function rota(id){ for(var i=0;i<COLECAO.length;i++) if(COLECAO[i].id===id) return COLECAO[i]; return COLECAO[0]; }
 
   var cur = COLECAO[0].id, gender = 'masc', size = null, photo = 0;
@@ -562,7 +601,6 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
     }, extra||{});
   }
 
-  /* ---- contornos do hero ---- */
   (function(){
     var g=qs('[data-contour]'); if(!g) return; var out='';
     for(var i=0;i<9;i++){ var y=120+i*80, d='M0 '+y;
@@ -573,7 +611,6 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
     g.innerHTML=out;
   })();
 
-  /* ---- abas ---- */
   (function(){
     qs('[data-tabs]').innerHTML = COLECAO.map(function(r,i){
       return '<button class="tab" role="tab" data-route="'+r.id+'" aria-selected="'+(i===0)+'">'+
@@ -584,12 +621,21 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
     });
   })();
 
-  /* ---- CRISTA ALTIMÉTRICA: todas as rotas em um perfil navegável ---- */
-  var maxAlt = COLECAO.reduce(function(m,r){ return Math.max(m, r.max); }, 1);
+  (function(){
+    qs('[data-models]').innerHTML = COLECAO.map(function(r,i){
+      return '<button data-model="'+r.id+'" aria-pressed="'+(i===0)+'">'+
+             '<span class="sw sw-'+r.cor.toLowerCase()+'"></span>'+r.cor+' · '+r.tab.toUpperCase()+'</button>';
+    }).join('');
+    qsa('[data-model]').forEach(function(b){
+      b.addEventListener('click', function(){ setRoute(b.getAttribute('data-model'), true); });
+    });
+  })();
+
+  var maxGain = COLECAO.reduce(function(m,r){ return Math.max(m, r.gain); }, 1);
   (function ridge(){
     var W=1200,H=150,seg=W/COLECAO.length,pts=[],peaks=[];
     COLECAO.forEach(function(r,i){
-      var x0=i*seg, h=Math.max(18, Math.min(120, r.max/maxAlt*118));
+      var x0=i*seg, h=Math.max(18, Math.min(120, r.gain/maxGain*118));
       pts.push([x0,H-14],[x0+seg*.26,H-14-h*.42],[x0+seg*.5,H-14-h],[x0+seg*.74,H-14-h*.38],[x0+seg,H-14]);
       peaks.push({id:r.id,x:x0+seg*.5,y:H-14-h});
     });
@@ -619,7 +665,6 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
     });
   }
 
-  /* ---- estampa procedural do placeholder (perfil da rota) ---- */
   function printPath(prof){
     var out='', W=76, x0=62;
     for(var k=0;k<4;k++){
@@ -633,7 +678,6 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
     return out;
   }
 
-  /* ---- galeria mosaico ---- */
   (function(){
     qs('[data-mosaic]').innerHTML = GALERIA.map(function(g,i){
       var inner = g.src ? '<img src="'+g.src+'" alt="'+g.cap+'" loading="lazy">'
@@ -642,7 +686,6 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
     }).join('');
   })();
 
-  /* ---- fotos da peça ---- */
   function renderPhotos(){
     var imgs = V().imgs||[], img=qs('[data-shot-img]'), ph=qs('[data-shot-ph]');
     var cur_img = imgs[photo];
@@ -658,7 +701,6 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
     });
   }
 
-  /* ---- tamanhos ---- */
   function renderSizes(){
     var sizes=V().sizes;
     qs('[data-sizes]').innerHTML = Object.keys(sizes).map(function(s){
@@ -675,19 +717,17 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
     });
   }
 
-  /* ---- preço / textos ---- */
   function renderInfo(){
     var r=R(), v=V();
     qs('[data-name]').textContent = r.nome;
     qs('[data-ep]').textContent = r.ep;
     qs('[data-story]').innerHTML = r.story;
     qs('[data-coord]').textContent = r.coord;
-    qs('[data-num]').textContent = 'PEÇA 001–'+r.total+' · NUMERADA';
-    qs('[data-dist]').textContent = r.dist;
+    qs('[data-num]').textContent = 'PEÇA NUMERADA · EDIÇÃO LIMITADA 2026';
+    qs('[data-dist]').textContent = numBR(r.dist);
     qs('[data-gain]').textContent = r.gain.toLocaleString('pt-BR');
-    qs('[data-max]').textContent = r.max.toLocaleString('pt-BR');
-    qs('[data-left]').textContent = v.left;
-    qs('[data-total]').textContent = '/'+r.total;
+    qs('[data-grade]').textContent = numBR(r.grade);
+    qs('[data-time]').textContent = r.time;
 
     qs('[data-price]').innerHTML = 'R$ '+Math.floor(v.price)+'<small>,'+brl(v.price).split(',')[1]+'</small>';
     qs('[data-pix]').textContent = 'R$ '+brl(v.price*(1-DROP.pix_discount))+' à vista no Pix ('+(DROP.pix_discount*100)+'% off)';
@@ -698,7 +738,6 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
     else { was.style.display='none'; }
   }
 
-  /* ---- botões de compra (bloco 3 e bloco 5) ---- */
   function renderBuy(){
     var hint=qs('[data-size-hint]'), ok=false, url='';
     if(size){
@@ -716,12 +755,11 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
     });
   }
 
-  /* ---- resumo da escolha (bloco 5) ---- */
   function renderChoice(){
     var t=qs('[data-choice-text]'), p=qs('[data-choice-price]'), v=V();
     if(size){
       t.textContent = 'Jersey '+R().nome+' · '+GENEROS[gender]+' · Tam. '+size;
-      p.textContent = 'R$ '+brl(v.price)+'  ·  R$ '+brl(v.price*(1-DROP.pix_discount))+' no Pix  ·  restam '+v.left;
+      p.textContent = 'R$ '+brl(v.price)+'  ·  R$ '+brl(v.price*(1-DROP.pix_discount))+' no Pix';
     } else {
       t.textContent = 'Jersey '+R().nome+' · '+GENEROS[gender]+' — escolha o tamanho';
       p.textContent = '';
@@ -730,10 +768,10 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
 
   function renderAll(){ renderInfo(); renderPhotos(); renderSizes(); renderBuy(); renderChoice(); }
 
-  /* ---- troca de rota ---- */
   function setRoute(id, animate){
     cur = id; size = null; photo = 0;
     qsa('[data-route]').forEach(function(b){ b.setAttribute('aria-selected', b.getAttribute('data-route')===id?'true':'false'); });
+    qsa('[data-model]').forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-model')===id?'true':'false'); });
     paintPeaks();
     renderAll();
     if(animate){
@@ -743,7 +781,6 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
     }
   }
 
-  /* ---- gênero ---- */
   qsa('[data-gender]').forEach(function(b){
     b.addEventListener('click', function(){
       qsa('[data-gender]').forEach(function(x){ x.setAttribute('aria-pressed','false'); });
@@ -754,7 +791,6 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
     });
   });
 
-  /* ---- comprar ---- */
   qsa('[data-buy]').forEach(function(a){
     a.addEventListener('click', function(e){
       if(a.getAttribute('aria-disabled')==='true'){
@@ -772,7 +808,6 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
     });
   });
 
-  /* ---- whatsapp ---- */
   qsa('[data-wa]').forEach(function(a){
     a.href = DROP.whatsapp;
     a.addEventListener('click', function(){
@@ -781,16 +816,13 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
     });
   });
 
-  /* ---- contadores do hero / story ---- */
   qs('[data-total-rotas]').textContent = COLECAO.length;
   qs('[data-sig-pecas]').textContent = COLECAO.length*2;
 
-  /* ---- boot ---- */
   setRoute(COLECAO[0].id, false);
   push('view_item', { ecommerce:{ currency:DROP.currency, value:V().price, items:[item()] } });
   meta('ViewContent', { content_ids:[V().sku], content_name:R().nome, content_type:'product', value:V().price, currency:DROP.currency });
 
-  /* ---- motion ---- */
   function initMotion(){
     if(!window.gsap || !window.ScrollTrigger) return;
     gsap.registerPlugin(ScrollTrigger);
@@ -812,7 +844,6 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
       gsap.from(el, { y:60, autoAlpha:0, duration:1.1, ease:'power3.out', scrollTrigger:{trigger:el,start:'top 86%'} });
     });
 
-    /* crista se desenha ao entrar */
     var rl=qs('[data-ridge-line]');
     if(rl && rl.getTotalLength){
       var len=rl.getTotalLength();
