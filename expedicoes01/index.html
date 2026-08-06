@@ -294,7 +294,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- ============ BLOCO 1 · HERO ============ -->
 <section class="hero" data-hero aria-label="Coleção Expedições Avancini">
   <div class="hero-bg">
-    <img src="./images/hero.jpg" alt="Henrique Avancini na rota — coleção Expedições Avancini da Nomad" fetchpriority="high">
+    <img src="/images/hero.jpg" alt="Henrique Avancini na rota — coleção Expedições Avancini da Nomad" fetchpriority="high">
   </div>
   <svg class="contour" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
     <defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
@@ -327,7 +327,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="eyebrow" style="margin-bottom:52px">01 / Avancini × Nomad</div>
   <div class="story-grid">
     <div class="story-shot" data-reveal>
-      <img src="./images/02-perfil.jpg" alt="Perfil da coleção Expedições Avancini" loading="lazy">
+      <img src="/images/02-perfil.jpg" alt="Perfil da coleção Expedições Avancini" loading="lazy">
       <div class="story-cap">EXPEDIÇÕES AVANCINI · EDIÇÃO LIMITADA 2026</div>
     </div>
     <div data-reveal>
@@ -469,7 +469,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="modal-overlay" id="sizeModal">
   <div class="modal-card">
     <button class="modal-close" id="closeSizeChart">&times;</button>
-    <img id="sizeChartImg" src="./images/1.png" alt="Tabela de Medidas">
+    <img id="sizeChartImg" src="/images/1.png" alt="Tabela de Medidas">
   </div>
 </div>
 
@@ -513,7 +513,7 @@ var COLECAO = [
     prof:[70,84,96,110,120,132,140,150,158,168,176,182,190,196,204,210,214,218,222,226,230],
     generos:{
       masc:{ sku:'EXP-MACACOS-M', price:499.00, was:0, left:63,
-        imgs:['./images/masc-rosa-01.jpg','./images/masc-rosa-02.jpg','./images/masc-rosa-03.jpg','./images/masc-rosa-04.jpg'],
+        imgs:['/images/masc-rosa-01.jpg','/images/masc-rosa-02.jpg','/images/masc-rosa-03.jpg','/images/masc-rosa-04.jpg'],
         sizes:{ 
           P:{url:'https://www.nomadsports.com.br/comprar?skus=3285%2C1%2C0%2C0&a=18414',stock:true}, 
           M:{url:'https://www.nomadsports.com.br/comprar?skus=3286%2C1%2C0%2C0&a=18414',stock:true}, 
@@ -523,7 +523,7 @@ var COLECAO = [
         } 
       },
       fem:{ sku:'EXP-MACACOS-F', price:499.00, was:0, left:48,
-        imgs:['./images/fem-rosa-01.jpg','./images/fem-rosa-02.jpg','./images/fem-rosa-03.jpg','./images/fem-rosa-04.jpg'],
+        imgs:['/images/fem-rosa-01.jpg','/images/fem-rosa-02.jpg','/images/fem-rosa-03.jpg','/images/fem-rosa-04.jpg'],
         sizes:{ 
           PP:{url:'https://www.nomadsports.com.br/comprar?skus=3295%2C1%2C0%2C0&a=18414',stock:true}, 
           P:{url:'https://www.nomadsports.com.br/comprar?skus=3296%2C1%2C0%2C0&a=18414',stock:true}, 
@@ -544,7 +544,7 @@ var COLECAO = [
     prof:[60,80,98,112,126,138,150,160,170,178,186,192,198,204,208,212,216,220,224,228,232],
     generos:{
       masc:{ sku:'EXP-SUMIDOURO-M', price:499.00, was:0, left:41,
-        imgs:['./images/masc-azul-01.jpg','./images/masc-azul-02.jpg','./images/masc-azul-03.jpg','./images/masc-azul-04.jpg'],
+        imgs:['/images/masc-azul-01.jpg','/images/masc-azul-02.jpg','/images/masc-azul-03.jpg','/images/masc-azul-04.jpg'],
         sizes:{ 
           P:{url:'https://www.nomadsports.com.br/comprar?skus=3290%2C1%2C0%2C0&a=18414',stock:true}, 
           M:{url:'https://www.nomadsports.com.br/comprar?skus=3291%2C1%2C0%2C0&a=18414',stock:true}, 
@@ -554,7 +554,7 @@ var COLECAO = [
         } 
       },
       fem:{ sku:'EXP-SUMIDOURO-F', price:499.00, was:0, left:37,
-        imgs:['./images/fem-azul-01.jpg','./images/fem-azul-02.jpg','./images/fem-azul-03.jpg','./images/fem-azul-04.jpg'],
+        imgs:['/images/fem-azul-01.jpg','/images/fem-azul-02.jpg','/images/fem-azul-03.jpg','/images/fem-azul-04.jpg'],
         sizes:{ 
           PP:{url:'https://www.nomadsports.com.br/comprar?skus=3299%2C1%2C0%2C0&a=18414',stock:true}, 
           P:{url:'https://www.nomadsports.com.br/comprar?skus=3300%2C1%2C0%2C0&a=18414',stock:true}, 
@@ -569,11 +569,11 @@ var COLECAO = [
 var GENEROS = { masc:'Masculino', fem:'Feminino' };
 
 var GALERIA = [
-  { cls:'c-a', src:'./images/resto-01.jpg',    cap:'NO TERRENO · EXPEDIÇÕES' },
-  { cls:'c-b', src:'./images/expedicoes_02.jpg', cap:'SUBIDA DE MACACOS' },
-  { cls:'c-c', src:'./images/expedicoes_03.jpg', cap:'SERRA DE SUMIDOURO' },
-  { cls:'c-d', src:'./images/expedicoes_04.jpg', cap:'EXPEDIÇÕES · DETALHE' },
-  { cls:'c-e', src:'./images/avancini-rota.jpg', cap:'HENRIQUE AVANCINI · NA ROTA' }
+  { cls:'c-a', src:'/images/resto-01.jpg',    cap:'NO TERRENO · EXPEDIÇÕES' },
+  { cls:'c-b', src:'/images/expedicoes_02.jpg', cap:'SUBIDA DE MACACOS' },
+  { cls:'c-c', src:'/images/expedicoes_03.jpg', cap:'SERRA DE SUMIDOURO' },
+  { cls:'c-d', src:'/images/expedicoes_04.jpg', cap:'EXPEDIÇÕES · DETALHE' },
+  { cls:'c-e', src:'/images/avancini-rota.jpg', cap:'HENRIQUE AVANCINI · NA ROTA' }
 ];
 
 window.dataLayer = window.dataLayer || [];
@@ -817,7 +817,7 @@ function meta(ev,p){ if(typeof fbq==='function') fbq('track',ev,p||{}); }
 
   if(openBtn && modal){
     openBtn.addEventListener('click', function(){
-      modalImg.src = gender === 'fem' ? './images/2.png' : './images/1.png';
+      modalImg.src = gender === 'fem' ? '/images/2.png' : '/images/1.png';
       modal.classList.add('active');
     });
   }
