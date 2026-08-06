@@ -76,7 +76,7 @@ src="https://www.facebook.com/tr?id=353704995112251&ev=PageView&noscript=1"
 
   :root{
     --ink:#EDE4D9;
-    --ink-2:#E4DAA;
+    --ink-2:#E4DAA0;
     --ink-3:#DCD2C6;
     --bone:#25352A;
     --brass:#25352A;
@@ -106,9 +106,9 @@ src="https://www.facebook.com/tr?id=353704995112251&ev=PageView&noscript=1"
     background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='150'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='150' height='150' filter='url(%23n)' opacity='0.5'/></svg>")}
 
   header.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
-    padding:20px 5vw;mix-blend-mode:difference;color:#FFFFFF}
-  .nav .brand-img{height:22px;width:auto;display:block;filter:invert(1) brightness(2)}
-  .nav .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;opacity:0.9;font-weight:700}
+    padding:24px 5vw;mix-blend-mode:difference;color:#FFFFFF}
+  .nav .brand-img{height:32px;width:auto;display:block;filter:invert(1) brightness(2)}
+  .nav .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;opacity:0.9;font-weight:700;color:#FFFFFF}
 
   section{position:relative}
   .wrap{padding:16vh 5vw}
@@ -120,23 +120,22 @@ src="https://www.facebook.com/tr?id=353704995112251&ev=PageView&noscript=1"
   /* ---------- BLOCO 1 · HERO ---------- */
   .hero{height:100vh;min-height:760px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 4vw}
   .hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
-  .hero-bg img{width:100%;height:100%;object-fit:cover;opacity:0.55}
-  .hero .contour{position:absolute;inset:0;z-index:1;opacity:0.3}
-  .hero .vig{position:absolute;inset:0;z-index:2;background:radial-gradient(120% 90% at 50% 40%,transparent 20%,rgba(237,228,217,0.6) 70%,rgba(237,228,217,0.95) 100%)}
+  .hero-bg img{width:100%;height:100%;object-fit:cover;opacity:1}
+  .hero .contour{position:absolute;inset:0;z-index:1;opacity:0.25}
   .hero .inner{position:relative;z-index:3}
+  .hero .eyebrow{color:#FFFFFF !important;text-shadow:0 1px 4px rgba(0,0,0,0.4)}
   .hero h1{margin:14px 0 0;font-family:var(--f-vienna);font-weight:900;line-height:1.05;letter-spacing:0;
-    text-transform:uppercase;font-size:clamp(56px,12vw,200px);padding:10px 0;color:var(--bone)}
-  .hero h1 .out{color:transparent;-webkit-text-stroke:1.5px var(--bone)}
+    text-transform:uppercase;font-size:clamp(56px,12vw,200px);padding:10px 0;color:#FFFFFF !important;text-shadow:0 2px 8px rgba(0,0,0,0.3)}
   .hero .hero-line-wrap{display:block;overflow:visible;padding:4px 0}
   .hero .telem{margin-top:30px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:center;
-    font-family:var(--f-mont);font-size:12px;letter-spacing:0.05em;font-weight:500;color:var(--muted)}
-  .hero .telem b{color:var(--bone);font-weight:700}
-  .hero .telem .sep{width:44px;height:1px;background:var(--line-2)}
-  .hero .foot{position:absolute;bottom:34px;z-index:4;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;color:var(--muted-2)}
+    font-family:var(--f-mont);font-size:12px;letter-spacing:0.05em;font-weight:500;color:#FFFFFF !important}
+  .hero .telem b{color:#FFFFFF !important;font-weight:700}
+  .hero .telem .sep{width:44px;height:1px;background:rgba(255,255,255,0.6)}
+  .hero .foot{position:absolute;bottom:34px;z-index:4;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;color:#FFFFFF !important;text-shadow:0 1px 3px rgba(0,0,0,0.5)}
   .hero .foot.l{left:5vw}.hero .foot.r{right:5vw}
   .hero .cue{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);z-index:4;display:flex;flex-direction:column;align-items:center;gap:9px}
-  .hero .cue span{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.3em;color:var(--muted)}
-  .hero .cue i{display:block;width:1px;height:42px;background:var(--bone)}
+  .hero .cue span{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.3em;color:#FFFFFF !important}
+  .hero .cue i{display:block;width:1px;height:42px;background:#FFFFFF !important}
 
   /* ---------- BLOCO 2 · AVANCINI × NOMAD ---------- */
   .story{border-top:1px solid var(--line)}
@@ -264,8 +263,8 @@ src="https://www.facebook.com/tr?id=353704995112251&ev=PageView&noscript=1"
   .c-a{grid-column:span 7;aspect-ratio:16/10}
   .c-b{grid-column:span 5;aspect-ratio:4/5}
   .c-c,.c-d,.c-e{grid-column:span 4;aspect-ratio:1/1}
-  .cap{position:absolute;left:0;right:0;bottom:0;padding:14px 16px;background:linear-gradient(transparent,rgba(237,228,217,0.9));
-    font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;color:var(--bone)}
+  .cap{position:absolute;left:0;right:0;bottom:0;padding:12px 16px;background:none;
+    font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.16em;color:var(--bone);font-weight:600}
 
   /* ---------- FOOTER RODAPÉ ---------- */
   .foot-meta{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:36px 5vw;
@@ -302,17 +301,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <svg class="contour" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
     <defs><linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#25352A" stop-opacity="0"/><stop offset="1" stop-color="#25352A" stop-opacity="0.22"/>
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset="1" stop-color="#FFFFFF" stop-opacity="0.3"/>
     </linearGradient></defs>
     <g fill="none" stroke="url(#cg)" stroke-width="1.1" data-contour></g>
   </svg>
-  <div class="vig"></div>
 
   <div class="inner">
     <div class="eyebrow" data-fade>Série Documental · Henrique Avancini × Nomad</div>
     <h1>
       <span class="hero-line-wrap"><span data-line style="display:block">EXPEDIÇÕES</span></span>
-      <span class="hero-line-wrap"><span data-line class="out" style="display:block">AVANCINI</span></span>
+      <span class="hero-line-wrap"><span data-line style="display:block">AVANCINI</span></span>
     </h1>
     <div class="telem" data-fade>
       <span><b data-total-rotas>—</b> ROTAS</span><i class="sep"></i>
@@ -418,7 +416,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="ph" data-shot-ph>
             <svg width="48%" viewBox="0 0 200 240" fill="none" aria-hidden="true">
               <path d="M60 30 L85 20 Q100 34 115 20 L140 30 L165 55 L150 80 L138 70 L138 210 Q100 220 62 210 L62 70 L50 80 L35 55 Z"
-                    stroke="#25352A" stroke-width="1.4" fill="#E4DAA"/>
+                    stroke="#25352A" stroke-width="1.4" fill="#E4DAA0"/>
               <path data-shot-print d="" stroke="#25352A" stroke-width="1" fill="none" opacity=".8"/>
             </svg>
             <div class="mono" style="font-size:10px;letter-spacing:.18em;color:var(--muted-2)">SUBSTITUIR PELA FOTO DA PEÇA</div>
